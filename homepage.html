@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agaetis Technologies</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      /* section{
+            padding:40px;
+        } */
+      .max-width {
+        max-width: 1300px;
+        margin: auto;
+        /* background: #4a4a4a; */
+        padding: 40px;
+      }
+      .box_flex h3 {
+        font-size: 22px;
+        text-transform: capitalize;
+        margin: 10px 0px;
+      }
+      /* .row{
+    display: flex;
+    flex-direction: row;
+} */
+.title_box h1 {
+    font-size: 44px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 15px 0px;
+}
+      .title_box {
+        width: 500px;
+        max-width: 500px;
+      }
+      .title_box p {
+        font-size: 18px;
+        color: #fff;
+      }
+      .post_box1 {
+        width: 100%;
+        background: #fff;
+        /* padding: 10px 20px; */
+        margin-right: 10px;
+        border-radius: 9px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+      }
+      .post_box {
+        width: 100%;
+        display: inline-grid;
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-template-columns: auto auto;
+        column-gap: 45px;
+      }
+      .blue_heading {
+        /* padding: 0px; */
+        margin: 5px 0px;
+        color: #87ceeb;
+        font-weight: 700;
+      }
+      .bg-color {
+        background: #4a4a4a;
+        padding: 60px;
+      }
+      .box_flex {
+        /* width: 50%; */
+        padding: 20px;
+      }
+      .post_img {
+        width: 50%;
+        text-align: right;
+      }
+      .post_img img {
+    width: 170px;
+    /* height: auto; */
+    display: block;
+    /* margin: 0px; */
+    /* padding: 0px; */
+}
+      .sample_box_width {
+        max-width: 900px;
+        padding: 20px;
+      }
+      .sample_grand_parent {
+        display: inline-flex;
+        /* grid-template-columns: auto auto; */
+        column-gap: 50px;
+      }
+      .sidebar_about {
+        background: #d3d3d336;
+        padding: 15px;
+      }
+      hr {
+        background-color: #d3d3d336;
+      }
+      .archies {
+    padding: 15px;
+}
+.elsewhere {
+    padding: 15px;
+}
+.firehose {
+    font-size: 22px;
+    /* font-family: sans-serif; */
+    color: #4a4a4a;
+}
+.sample_blog {
+    font-size: 35px;
+    margin: 0px;
+    color: #4a4a4a;
+}
+.lightgrey{
+    color: #d3d3d3;
+}
+.archies h4 {
+    font-size: 22px;
+    color: #4a4a4a;
+    margin: 10px 0px;
+}
+.elsewhere h4{
+    font-size: 22px;
+    color: #4a4a4a;
+    margin: 10px 0px;
+}
+.another_blog_post h2 {
+    font-size: 35px;
+    margin: 0px;
+    color: #4a4a4a;
+}
+.another_blog_post {
+    padding-top: 20px;
+}
+.new_features h2 {
+    font-size: 35px;
+    margin: 0px;
+    color: #4a4a4a;
+}
+.new_features {
+    padding-top: 20px;
+}
+.sample_box h3 {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin: 10px 0px;
+}
+button.never {
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #d3d3d3;
+    color: #d3d3d3;
+    cursor: pointer;
+}
+button.older {
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #87ceeb;
+    color: #87ceeb;
+    cursor: pointer;
+}
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+}
+.top_nav p {
+    font-size: 18px;
+    color: #4a4a4a;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    list-style: none;
+    color: #4a4a4a;
+}
+.nameby{
+    color: #87ceeb;
+}
+nav ul li {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+header .header-max-width {
+    max-width: 1300px;
+    padding: 10px;
+    margin: auto;
+}
+.blog-post h2 {
+    font-size: 35px;
+    margin: 0px;
+    color: #4a4a4a;
+    text-transform: capitalize;
+}
+.blog-post {
+    padding-top: 20px;
+}
+.date {
+    color: #d3d3d3;
+    margin: 10px 0px;
+}
+form#blogForm input {
+    width: 95%;
+    margin: 5px;
+    height: 28px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #87ceeb;
+}
+textarea#content {
+    /* width: 100%; */
+    /* margin: 5px; */
+    width: 95%;
+    margin: 5px;
+    height: 28px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #87ceeb;
+}
+input:focus-visible {
+    outline: none;
+}
+textarea:focus-visible{
+    outline: none;
+}
+.top_nav button {
+    background: transparent;
+    border: 1px solid #4a4a4a;
+    padding: 17px;
+    height: 0px;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    border-radius: 5px;
+    color: #4a4a4a;
+}
+
+
+.user_form {
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+}
+h3.form_heading {
+    text-align: center;
+    font-size: 26px;
+    color: #87ceeb;
+    letter-spacing: 1.2px;
+    width: 100%;
+    text-transform: uppercase;
+}
+form#blogForm {
+    /* width: 100%; */
+    padding: 30px;
+    /* background: #eee; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+input#formSubmit {
+    background: transparent;
+    /* padding: 20px; */
+    font-size: 14px;
+    color: #eee;
+    background: #87ceeb;
+    width: 98% !important;
+    height: 40px !important;
+    border: none !important;
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.user_form hr {
+    margin: 26px;
+}
+@media only screen and (max-width: 900px) {
+    nav ul li {
+    font-size: 14px;
+}
+.post_box {
+    grid-template-columns: auto;
+    column-gap: 45px;
+    row-gap: 35px;
+}
+.logo {
+    font-size: 30px;
+}
+
+    .top_nav {
+    align-items: center;
+}
+.max-width {
+    padding: 15px;
+}
+header {
+    padding: 15px;
+}
+}
+@media only screen and (max-width: 677px) {
+    nav ul li {
+    font-size: 12px;
+}
+header {
+    padding: 10px;
+}
+.max-width {
+    padding: 10px;
+}
+.title_box h1 {
+    font-size: 22px;
+}
+.title_box p {
+    font-size: 13px;
+    color: #fff;
+}
+}
+@media only screen and (max-width: 580px) {
+    .logo {
+    font-size: 22px;
+}
+.top_nav button {
+
+    padding: 13px;
+}
+.top_nav p {
+    font-size: 16px;
+
+}
+    nav ul {
+    display: none;
+}
+.title_box {
+    width: 100%;
+    max-width: 100%;
+}
+.sample_grand_parent {
+    flex-direction: column;
+}
+.archies {
+    text-align: center;
+}
+.elsewhere {
+    text-align: center;
+}
+.post_box1 {
+    flex-flow: column-reverse;
+}
+.post_img img {
+    width: 100%;
+}
+.post_img {
+    width: 100%;
+}
+.box_flex {
+
+    text-align: center;
+}
+.bg-color {
+    padding: 30px;
+}
+
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="header-max-width">
+            <div class="top_nav">
+                <p>Subscribe</p>
+                <div class="logo">
+                    Logo
+                </div>
+                <button>Signup</button>
+            </div>
+            <hr>
+            <nav><ul><li>World</li><li>U.S</li><li>Technology</li><li>Design</li><li>Culture</li><li>Business</li><li>Polotics</li><li>Opinion</li><li>Science</li><li>Health</li><li>Style</li><li>Travel</li></ul></nav>
+        </div>
+    </header>
+    <!-- --hero--- -->
+    <section id="hero">
+      <div class="max-width">
+        <div class="row">
+          <div class="bg-color">
+            <div class="title_box">
+              <i> <h1>Tittle of a longer featured blog post</h1></i>
+              <i
+                ><p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                  fugit optio porro quam magni iure enim dolore cumque natus
+                  quaerat inventore non, eius qui laborum tempore ea quia nobis.
+                </p></i
+              >
+              <p style="font-weight: 600;">Continue reading...</p>
+            </div>
+          </div>
+          <div class="post_box">
+            <div class="post_box1">
+              <div class="box_flex">
+                <p class="blue_heading">World</p>
+                <h3>featured post</h3>
+                <p>Nov 12</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Rerum soluta magnam aperiam quas tempore placeat ab
+                  perferendis harum quaerat?
+                </p>
+                <p class="blue_heading">Continue reading</p>
+              </div>
+              <div class="post_img">
+                <img src="./post.jpg" alt="" />
+              </div>
+            </div>
+            <div class="post_box1">
+              <div class="box_flex">
+                <p class="blue_heading" style="color: green;">Design</p>
+                <h3>featured post</h3>
+                <p>Nov 12</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Rerum soluta magnam aperiam quas tempore placeat ab
+                  perferendis harum quaerat?
+                </p>
+                <p class="blue_heading">Continue reading</p>
+              </div>
+              <div class="post_img">
+                <img src="./post.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---sample-blog-post-- -->
+    <section id="sample_blog_post">
+      <div class="max-width">
+        <div class="row">
+          <div class="sample_grand_parent">
+            <div class="sample_box_width">
+              <i><h3 class="firehose">From the firehose</h3></i>
+              <hr />
+              <div class="sample_box_parent">
+                <div class="sample_box">
+                  <h2 class="sample_blog">Sample Blog Post</h2>
+                  <span
+                    ><p class="lightgrey">
+                      January 1, 2016 by <span class="blue_heading">Mark</span>
+                    </p></span
+                  >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+                    veritatis provident nobis. Modi, harum exercitationem,
+                    provident beatae minus illo odio impedit culpa quasi, quia
+                    nobis at porro ipsam debitis.
+                  </p>
+                  <hr />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat perspiciatis facere ullam similique odio sint non
+                    nemo facilis, nam, rem, cumque esse maiores laborum ducimus
+                    placeat reprehenderit deserunt minima at aliquid! Saepe, est
+                    distinctio? Sed voluptates
+                    <span class="blue_heading">quasi soluta quis officia</span>
+                    accusantium recusandae. Repellat quas rem commodi
+                    necessitatibus.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos sit, incidunt molestias laudantium optio nam
+                    consequuntur, blanditiis quae quas reiciendis rem nihil
+                    nostrum dolor non saepe harum.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos sit, incidunt molestias laudantium optio nam
+                    consequuntur, blanditiis quae quas reiciendis rem nihil
+                    nostrum dolor non saepe harum,incidunt molestias laudantium
+                    optio nam consequuntur.
+                  </p>
+
+                  <h3>Heading</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rem eaque dicta blanditiis deserunt, alias, accusantium odit
+                    officiis ipsa aut consequuntur similique eius fuga sed
+                    corrupti at, necessitatibus vitae ad provident earum
+                    doloribus dolorem facilis pariatur quod explicabo! Eos
+                    incidunt qui aliquid commodi iste inventore fuga distinctio,
+                    aliquam sequi ipsum?
+                  </p>
+                  <h3>Sub-Heading</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rem eaque dicta blanditiis deserunt, alias, accusantium odit
+                    officiis ipsa aut consequuntur similique eius fuga sed
+                    corrupti at, necessitatibus vitae ad provident earum
+                    doloribus dolorem facilis pariatur quod explicabo!
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolor ea sint delectus odio fugiat, commodi voluptatibus.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum rerum accusantium officia provident reprehenderit
+                    quibusdam obcaecati itaque nulla explicabo.
+                  </p>
+                  <h3>Sub-Heading</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Rem eaque dicta blanditiis deserunt, alias, accusantium odit
+                    officiis ipsa aut consequuntur similique eius fuga sed
+                    corrupti at.
+                  </p>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio.
+                    </li>
+                  </ul>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos vel blanditiis similique!
+                  </p>
+                  <ul>
+                    <li>
+                      1. Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Veniam reprehenderit placeat soluta.
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      2. Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Veniam reprehenderit placeat soluta.
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>
+                      3. Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Veniam reprehenderit placeat soluta.
+                    </li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor eaque deserunt quidem?
+                  </p>
+                </div>
+                <div class="another_blog_post">
+                  <h2>Another blog Post</h2>
+                  <span
+                    ><p class="lightgrey">
+                      December 16, 2019 by
+                      <span class="blue_heading">Jacob</span>
+                    </p></span
+                  >
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ducimus similique libero
+                    <span class="blue_heading">
+                      nostrum rerum laboriosam doloribus</span
+                    >
+                    expedita dolorem. Ratione debitis quae et veniam distinctio
+                    harum quod at ullam iusto aliquam.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    minus quae non neque debitis sint et dolore esse inventore?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius, blanditiis! Dolorum ea id molestias, modi nulla et!
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Debitis molestias alias maxime consequatur quibusdam
+                    perferendis blanditiis voluptates totam delectus facere odio
+                    pariatur dolorem a deserunt aliquid, rerum quam voluptate
+                    cupiditate ab? Quam cum pariatur deserunt doloribus id harum
+                    nesciunt.
+                  </p>
+                </div>
+                <div class="new_features">
+                  <h2>New Feature</h2>
+                  <span
+                    ><p class="lightgrey">
+                      December 26, 2022 by
+                      <span class="blue_heading">Chris</span>
+                    </p></span
+                  >
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ducimus similique libero nostrum rerum laboriosam doloribus
+                    expedita dolorem. Ratione debitis quae et veniam distinctio
+                    harum quod at ullam iusto aliquam, sit amet consectetur
+                    adipisicing elit.
+                  </p>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Inventore perspiciatis in incidunt.
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Consequatur!
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius, blanditiis! Dolorum ea id molestias, modi nulla et!
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Debitis molestias alias maxime consequatur quibusdam
+                    perferendis blanditiis.
+                  </p>
+                  <div class="button_box">
+                    <button class="older">Older</button>
+                    <button class="never">Newer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar">
+              <div class="sidebar_box">
+                <div class="sidebar_about">
+                   <i><h4>About</h4></i>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum quidem ullam molestiae fuga temporibus corrupti,
+                    reiciendis fugit cupiditate officiis consectetur, est id
+                    consequatur, quas eligendi odio hic similique delectus!
+                  </p>
+                </div>
+                <div class="archies">
+                  <i> <h4>Archives</h4></i>
+                  <p class="blue_heading">January 2014</p>
+                  <p class="blue_heading">January 2014</p>
+                  <p class="blue_heading">January 2014</p>
+                  <p class="blue_heading">January 2014</p>
+                  <p class="blue_heading">January 2014</p>
+                  <p class="blue_heading">January 2014</p>
+                  <p class="blue_heading">January 2014</p>
+                  <p class="blue_heading">January 2014</p>
+                </div>
+                <div class="elsewhere">
+                  <i> <h4>Elsewhere</h4></i>
+                  <p class="blue_heading">GitHub</p>
+                  <p class="blue_heading">Twitter</p>
+                  <p class="blue_heading">Facebook</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Container for displaying blog content -->
+    <div class="blog-container" id="blogContainer">
+        <!-- Blog content will be displayed here -->
+    </div>
+    <!-- ---form -->
+    <div class="user_form">
+        <h3 class="form_heading">Add New Blog</h3>
+        <hr>
+            <form id="blogForm">
+                <input type="text" id="title" placeholder="Enter title" required><br>
+                <input type="text" id="name" placeholder="Enter name" required><br>
+                <input type="text" id="para" placeholder="Enter para" required><br>
+                <input type="date" id="date" placeholder="Enter date" required><br>
+                <textarea id="content" placeholder="Enter content" required></textarea><br>
+                <input type="submit" id="formSubmit" value="Submit">
+            </form>
+    </div>
+     
+    <!-- vanilla javascripct-- -->
+    <script>
+        document.getElementById('blogForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var title = document.getElementById('title').value;
+            var name = document.getElementById('name').value;
+            var date = document.getElementById('date').value;
+            var para = document.getElementById('para').value;
+            var content = document.getElementById('content').value;
+            
+            
+    
+            if (title.trim() === '' || content.trim() === '' || para.trim() === '' || date.trim() === '' || name.trim() === '') {
+                alert('Please fill in all fields');
+                return;
+            }
+    
+            var dateObj = new Date(date);
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = dateObj.toLocaleDateString('en-US', options);
+    
+            // Create a blog post element
+            var blogPost = document.createElement('div');
+            blogPost.classList.add('blog-post');
+
+            var blogName = document.createElement('p');
+            blogName.textContent = name;
+            blogName.classList.add('nameby');
+
+            var blogDate = document.createElement('p');
+            blogDate.textContent = formattedDate + ' by' + ' ' ;
+            blogDate.classList.add('date'); 
+            blogName.classList.add('nameby');
+
+            var nameSpan = document.createElement('span');
+            nameSpan.textContent = blogName.textContent;
+            nameSpan.style.color = '#87ceeb';
+            nameSpan.style.textTransform = 'capitalize';
+
+
+            blogDate.appendChild(nameSpan);
+            blogDate.classList.add('date', 'nameby');
+
+    
+            var blogTitle = document.createElement('h2');
+            blogTitle.textContent = title;
+            blogTitle.classList.add('title'); 
+
+
+            var blogPara = document.createElement('p');
+            blogPara.textContent = para;
+            blogPara.classList.add('para1'); 
+
+    
+            var blogContent = document.createElement('p');
+            blogContent.textContent = content;
+            blogContent.classList.add('para2'); 
+
+            
+    
+            blogPost.appendChild(blogTitle);
+            blogPost.appendChild(blogDate);
+            blogPost.appendChild(blogPara);
+            blogPost.appendChild(blogContent);
+            
+    
+            // Append the blog post to the container
+            var blogContainer = document.getElementsByClassName('sample_box_width')[0];
+            blogContainer.appendChild(blogPost);
+    
+            // Clear form fields
+            document.getElementById('title').value = '';
+            document.getElementById('date').value = '';
+            document.getElementById('para').value = '';
+            document.getElementById('content').value = '';
+            
+            
+        });
+    </script>
+    
+  </body>
+  
+</html>
